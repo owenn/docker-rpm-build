@@ -112,3 +112,18 @@ $ cd make
 $ docker build -t rpm-build-make .
 ```
 
+### Notes
+
+
+Evaluate an RPM macro expression:
+
+```
+rpm -E '%_topdir'
+```
+
+Show all macro definitions:
+```
+rpm --showrc
+spectool -C ~/rpmbuild/SOURCES -g package.spec
+```
+
